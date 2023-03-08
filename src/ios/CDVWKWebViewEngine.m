@@ -204,7 +204,7 @@
     configuration.allowsInlineMediaPlayback = [settings cordovaBoolSettingForKey:@"AllowInlineMediaPlayback" defaultValue:YES];
     configuration.suppressesIncrementalRendering = [settings cordovaBoolSettingForKey:@"SuppressesIncrementalRendering" defaultValue:NO];
     configuration.allowsAirPlayForMediaPlayback = [settings cordovaBoolSettingForKey:@"MediaPlaybackAllowsAirPlay" defaultValue:YES];
-    configuration.defaultWebpagePreferences.preferredContentMode = WKContentModeMobile;
+    configuration.WKWebpagePreferences.preferredContentMode = WKContentModeMobile;
     if (@available(iOS 13.0, *)) {
         NSString *contentMode = [settings cordovaSettingForKey:@"PreferredContentMode"];
         if ([contentMode isEqual: @"mobile"]) {
